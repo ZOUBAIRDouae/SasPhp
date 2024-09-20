@@ -8,6 +8,8 @@ class Voiture {
         echo "La voiture démarre.";
     }
 }
+
+
 $maVoiture = new Voiture();
 $maVoiture->marque = "Renault";
 $maVoiture->modele = "Clio";
