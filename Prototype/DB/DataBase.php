@@ -2,11 +2,9 @@
 
 class DataBase{
 
-    public $Books = []
+    public $Books = [];
     
-    public function __construct(){
-        
-    }
+ 
     
     
 }
