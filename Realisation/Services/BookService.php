@@ -20,11 +20,6 @@ class BookService{
 
     }
 
-    public function deleteBook($id){
-        return $this->bookDAO->deleteBook($id);
-    }
-
-
 
         
     

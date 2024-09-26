@@ -19,18 +19,16 @@ class DadaBase{
         }
     }
 
-    private function setData(){
-        $filepath = "../DB/DataBase.txt";
+    public function setData(){
+        $filepath = "../DB/DataBase.txt"
         $data = serialize($this);
-        file_put_content($filepath, $data);
-
+        $file_put_content($filepath, $data)
     }
 
-
-
+    
 
     public function saveData(){
-        $this->setData();
+        $this->setData()
     }
 
 }

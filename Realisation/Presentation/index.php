@@ -21,7 +21,6 @@ function library_management()
     echo "|------------------------------------| \n";
     echo "| [v] - View the Books               |\n";
     echo "| [a] - Add a new Book               |\n";
-    echo "| [d] - delete a  Book               |\n";
     echo "| [exit] - Exit the program          |\n";
     echo "+------------------------------------+\n\n";
 
@@ -37,11 +36,6 @@ function library_management()
         $bookPresentation->addBook();
         break;
 
-        case 'd':
-          $bookPresentation = new BookPresentation();
-          $bookPresentation->deleteBook();
-          break;
-
       case 'exit':
         $exitProgram = true;
         break;
@@ -55,6 +49,3 @@ function library_management()
 }
 
 library_management();
-
-
-?>
