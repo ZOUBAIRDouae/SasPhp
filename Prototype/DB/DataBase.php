@@ -30,15 +30,6 @@ class DadaBase{
         $this->setData();
     }
 
-    
-
-
-
-
-
-
-
-
 }
 
 
