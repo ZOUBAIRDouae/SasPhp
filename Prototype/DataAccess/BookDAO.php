@@ -2,16 +2,19 @@
 
 require("../DB/DataBase.php");
 
-class BookDAO {
+class BookDAO{
+
     public function getBooks(){
-        $database = new DataBase();
-        return $database->Books;
+        $db = new DataBase();
+        return $db->Books;
+
     }
 
-    public function getBook($book){
-        $database = new DataBase();
-        $database->Books[] = $book;
-        $database->saveData();
+    public function setBook($book){
+        $db = new DataBase();
+        $db->Books[] = $book;
+        $db->save(); //on sauvegarde le tableau dans le fichier
+
     }
 }
 
