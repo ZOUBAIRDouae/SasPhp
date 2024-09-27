@@ -27,7 +27,7 @@ class BookDAO{
             }
     }}
 
-    public function updateBook($id, $book){
+    public function updateBook($id, $editbook){
         $db = new DataBase()
         foreach($db->Books as $key => $book){
             if($book->id == $id) {

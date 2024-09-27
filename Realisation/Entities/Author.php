@@ -4,13 +4,12 @@ class Author {
     private $id
     private $firstName
     private $lastName
-    private $birthDate
     private $nationality
 
-    public function __construct($firstName, $lastName, $birthDate, $nationality){
+    public function __construct($firstName, $lastName , $nationality){
+        $this->id = time()
         $this->firstName = $firstName
         $this->lastName = $lastName
-        $this->birthDate = $birthDate
         $this->nationality = $nationality
     }
 
@@ -38,14 +37,6 @@ class Author {
         $this->lastName = $lastName
     }
 
-    public function getBirthDate(){
-        return $this->birthDate
-    }
-
-    public function setBirthDate($birthDate){
-        $this->birthDate = $birthDate
-    }
-
     public function getNationality(){
         return $this->nationality
     }
@@ -54,7 +45,5 @@ class Author {
         $this->nationality = $nationality
     }
 }
-
-
 
 ?>
