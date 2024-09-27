@@ -18,27 +18,24 @@ class BookDAO{
     }
 
     public function deleteBook($id){
+        $db = new DataBase()
         foreach ($this->Books as $key => $book) {
             if ($book->id == $id) {
                 unset($this->Books[$key]); 
+                $db->save()
+                break
+            }
+    }}
+
+    public function updateBook($id, $book){
+        $db = new DataBase()
+        foreach($db->Books as $key => $book){
+            if($book->id == $id) {
                 
             }
+        }
     }
 
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ?>

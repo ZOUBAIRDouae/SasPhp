@@ -10,13 +10,15 @@ class AuthorDAO{
         return $db->Authors
     }
 
-    public function getAuthor($id){
+    public function getAuthor($author){
         $db = new DataBase()
-        $db->Authors[]  =  $id
+        $db->Authors[]  =  $author
         $db->save()
     }
 
     
+
+
 }
 
 
