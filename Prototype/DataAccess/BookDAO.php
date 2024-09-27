@@ -17,18 +17,8 @@ class BookDAO{
 
     }
 
-    public function deleteBook($id){
-        foreach ($this->Books as $key => $book) {
-            if ($book->id == $id) {
-                unset($this->Books[$key]); 
-                
-            }
-    }
-
- 
-
 }
-}
+
 
 
 
